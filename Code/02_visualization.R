@@ -25,3 +25,6 @@ plot(b2, col=cl)
 
 # Exercise: make your own color ramp
 # https://sites.stat.columbia.edu/tzheng/files/Rcolor.pdf
+
+cl = colorRampPalette(c("royalblue3", "seagreen1", "red1"))(100)
+plot(b2, col=cl)
