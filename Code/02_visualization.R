@@ -16,6 +16,9 @@ im.list()
 b2 = im.import("sentinel.dolomites.b2.tif")
 plot(b2, col=cl)
 
+cl = colorRampPalette(c("black", "dark grey", "light grey"))(100)
+plot(b2, col=cl)
+
 cl = colorRampPalette(c("black", "dark grey", "light grey"))(3)
 plot(b2, col=cl)
 # tlumley@u.washington.edu, Thomas Lumley
