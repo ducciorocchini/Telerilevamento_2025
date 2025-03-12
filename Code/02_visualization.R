@@ -108,31 +108,6 @@ plot(sentdol, col=magma(100))
 # Viridis colors:
 # https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
 
-# Layers
-# 1 = blue (b2)
-# 2 = green (b3)
-# 3 = red (b4)
-# 4 = NIR (b8)
-
-# Natural colors
-# Color hypnosis here: https://www.youtube.com/watch?v=0G383538qzQ
-im.plotRGB(sentdol, r=3, g=2, b=1)
-
-# False colors
-im.plotRGB(sentdol, r=4, g=3, b=2)
-
-# Exercise: plot the image using the NIR ontop of the green component of the RGB scheme
-im.plotRGB(sentdol, r=3, g=4, b=2)
-pairs(sentdol)
-
-im.plotRGB(sentdol, r=2, g=4, b=3)
-
-im.multiframe(1, 2)
-im.plotRGB(sentdol, r=3, g=4, b=2)
-im.plotRGB(sentdol, r=2, g=4, b=3)
-
-dev.off()
-im.plotRGB(sentdol, r=3, g=2, b=4)
 
 
 
