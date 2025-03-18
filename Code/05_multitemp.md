@@ -16,5 +16,5 @@ the output will be something like:
 
 <img src="../Pics/difgreen.jpeg" width=100% />
 
-
+> Note: link at the [Coprnicus page](https://www.copernicus.eu/)
 
