@@ -15,3 +15,6 @@ grdif = gr[[4]] - gr[[1]]
 
 This will create the following output image:
 
+<img src="../Pics/output.jpeg" width=100% />
+
+
