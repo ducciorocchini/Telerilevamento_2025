@@ -33,9 +33,9 @@ im.multiframe(1,2)
 plot(gr[[1]], col=rocket(100))
 plot(gr[[4]], col=rocket(100))
 
-grdif = gr[[1]] - gr[[4]]
-dev.off()
+grdif = gr[[4]] - gr[[1]] # 2015 - 2000
 plot(grdif)
+# All the yellow parts are those in which there is a higher value in 2015
 
 # Exporting data
 setwd("/Users/ducciorocchini/Downloads")
