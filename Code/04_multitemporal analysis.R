@@ -37,32 +37,6 @@ grdif = gr[[4]] - gr[[1]] # 2015 - 2000
 plot(grdif)
 # All the yellow parts are those in which there is a higher value in 2015
 
-# Exporting data
-setwd("/Users/ducciorocchini/Downloads")
-setwd("~/Desktop")
-# Windowds users: C://comp/Downloads
-# \
-# setwd("C://nome/Downloads")
-
-getwd()
-
-plot(gr)
-
-png("greenland_output.png")
-plot(gr)
-dev.off()
-
-pdf("greenland_output.pdf")
-plot(gr)
-dev.off()
-
-pdf("difgreen.pdf")
-plot(grdif)
-dev.off()
-
-jpeg("difgreen.jpeg")
-plot(grdif)
-dev.off()
 
 
 
