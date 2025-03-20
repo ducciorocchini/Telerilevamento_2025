@@ -1,9 +1,12 @@
 # R code for performing multitemporal analysis
 
+# install.packages("ggridges") # this is needed to create ridgeline plots
 library(imageRy)
 library(terra)
 library(viridis)
+# library(ggridges)
 
+# Listing the data
 im.list()
 
 EN_01 = im.import("EN_01.png")
@@ -37,6 +40,10 @@ grdif = gr[[4]] - gr[[1]] # 2015 - 2000
 plot(grdif)
 # All the yellow parts are those in which there is a higher value in 2015
 
+# Ridgeline plots
+im.ridgeline(gr, scale=1)
+im.ridgeline(gr, scale=2)
+im.ridgeline(gr, scale=2, palette="inferno")
 
 
 
