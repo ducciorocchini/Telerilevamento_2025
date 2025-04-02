@@ -72,6 +72,20 @@ ggplot(tabout, aes(x=class, y=y2006, fill=class, color=class)) +
 
 # https://www.sthda.com/english/wiki/ggplot2-barplots-quick-start-guide-r-software-and-data-visualization
 
+# Horizontal bars
+
+p1 = ggplot(tabout, aes(x=class, y=y1992, color=class)) +
+  geom_bar(stat="identity", fill="white") +
+  ylim(c(0,100)) +
+  coord_flip()
+
+p2 = ggplot(tabout, aes(x=class, y=y2006, color=class)) +
+  geom_bar(stat="identity", fill="white") +
+  ylim(c(0,100)) +
+  coord_flip()
+
+p1 / p2
+
 classall = c("Forest1992","Human1992","Forest2006","Human2006")
 percentage = c(83,17,45,55)
 all = data.frame(classall, percentage)
