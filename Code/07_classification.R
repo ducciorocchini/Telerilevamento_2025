@@ -62,6 +62,21 @@ p0 + p00 + p1 + p2
 % https://stackoverflow.com/questions/52684424/show-the-percentage-instead-of-count-in-histogram-using-ggplot2-r
 
 
+#----- Day 2
 
+# Coloring bars
 
+ggplot(tabout, aes(x=class, y=y2006, fill=class, color=class)) + 
+  geom_bar(stat="identity") + 
+  ylim(c(0,100))
+
+# https://www.sthda.com/english/wiki/ggplot2-barplots-quick-start-guide-r-software-and-data-visualization
+
+classall = c("Forest1992","Human1992","Forest2006","Human2006")
+percentage = c(83,17,45,55)
+all = data.frame(classall, percentage)
+
+# Stacked barplot with multiple groups
+ggplot(data=all, aes(x=classall, y=percentage, color=classall)) +
+  geom_bar(stat="identity", fill="white")
 
