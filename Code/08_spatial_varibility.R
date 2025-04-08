@@ -72,3 +72,4 @@ p3 = ggRGB(sent, r=1, g=2, b=3)
 p1 + p2 + p3
 p3 + p1 + p2
 
+# Thursday: stretch, variance, resampling
