@@ -1,4 +1,5 @@
 # Code for calculating spatial variability
+# https://www.cuemath.com/data/standard-deviation/
 
 library(terra)
 library(imageRy)
@@ -21,7 +22,7 @@ den = 4 - 1
 
 variance = num / den
 stdev = sqrt(variance)
-# stdev = 11.41271
+# stdev = 13.1751
 
 sd(c(23, 22, 23))
 
