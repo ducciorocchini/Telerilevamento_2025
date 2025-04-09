@@ -2,6 +2,10 @@
 
 library(terra)
 library(imageRy)
+library(viridis)
+library(patchwork)
+# install.packages("RStoolbox")
+library(RStoolbox)
 
 # 24 26 25
 
@@ -46,4 +50,42 @@ im.plotRGB(sent, r=1, g=2, b=3)
 im.plotRGB(sent, r=2, g=1, b=3)
 im.plotRGB(sent, r=3, g=2, b=1)
 # im.plotRGB(sent, r=2, g=3, b=1)
+
+#----
+
+nir = sent[[1]]
+
+# Exercise: plot the nir band with the inferno color ramp palette
+dev.off()
+plot(nir, col=inferno(100))
+
+sd3 = focal(nir, w=c(3,3), fun="sd")
+plot(sd3)
+
+im.multiframe(1,2)
+im.plotRGB(sent, r=1, g=2, b=3)
+plot(sd3)
+
+sd5 = focal(nir, w=c(5,5), fun="sd")
+dev.off()
+plot(sd5)
+
+im.multiframe(1,2)
+plot(sd3)
+plot(sd5)
+
+# Exercise: use ggplot to plot the standard deviation
+im.ggplot(sd3)
+
+# Exercise: plot the two sd maps (3 and 5) one beside the other with ggplot
+p1 = im.ggplot(sd3)
+p2 = im.ggplot(sd5)
+
+p1 + p2
+
+# PLot the original nir and the stdev
+p3 = im.ggplot(nir)
+p3 + p1
+
+
 
