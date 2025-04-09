@@ -50,7 +50,7 @@ nir = sent[[1]]
 
 # Exercise: plot the nir band with the inferno color ramp palette
 plot(nir, col=inferno(100))
-sd3 = focal(nir, w=c(3,3), fun=sd)
+sd3 = focal(nir, w=c(3,3), fun="sd")
 plot(sd3)
 
 im.multiframe(1,2)
@@ -58,7 +58,7 @@ im.plotRGB(sent, r=1, g=2, b=3)
 plot(sd3)
 
 # Exercise: calculate standard deviation of the nir band with a moving window of 5x5 pixels
-sd5 = focal(nir, w=c(5,5), fun=sd)
+sd5 = focal(nir, w=c(5,5), fun="sd")
 
 # Exercise: use ggplot to plot the standard deviation
 im.ggplot(sd3)
