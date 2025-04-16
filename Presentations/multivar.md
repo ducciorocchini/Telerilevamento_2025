@@ -4,3 +4,4 @@ Information about theory of Principal Component Analysis can be found [here](htt
 
 A graphical sketch is the following:
 
+<img src="../Pics/pca.png" />
