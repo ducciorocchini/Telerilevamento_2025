@@ -1,3 +1,5 @@
+library(terra)
+library(cblindplot)
 
 # Vinicunca
 # https://fb.watch/xfBsEdtO4Z/
