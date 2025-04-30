@@ -13,5 +13,5 @@ This repo is related to the Course on remote Sensing in R at UNIBO
 
 ## Regole esame 📘
 + Codice: uno script a parte es. Code_exam.R 💻
-+ Presentazione: LaTeX o Powerpoint o qualsiasi altra fomra, oppure: MarkDown (.md): un punto in più. 🔖
++ Presentazione: LaTeX o Powerpoint o qualsiasi altra fomra, oppure: Markdown (.md): un punto in più. 🔖
 
