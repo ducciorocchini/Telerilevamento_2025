@@ -28,7 +28,7 @@ The image is the following:
 
 ## Data analysis
 
-Based on the data gathered from the site we can caluclate an index, using the first two bands:
+Based on the data gathered from the site we can calculate an index, using the first two bands:
 
 ``` r
 fireindex = fires[[1]] - fires[[2]]
