@@ -11,6 +11,7 @@ library(cblindplot)
 
 # Importing data
 setwd("~/Desktop")
+# https://fb.watch/xfBsEdtO4Z/
 vinicunca = rast("vinicunca.jpg")
 plot(vinicunca)
 vinicunca = flip(vinicunca)
