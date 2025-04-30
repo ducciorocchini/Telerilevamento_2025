@@ -2,7 +2,7 @@
 
 ## Data gathering
 
-Data were gathered from the [Earth Observatory site](https://earthobservatory.nasa.gov/).
+Data were **gathered** from the [Earth Observatory site](https://earthobservatory.nasa.gov/).
 
 Packages used:
 
